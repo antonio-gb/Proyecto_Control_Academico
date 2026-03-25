@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Control Académico"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".activity_student_grades"
+            android:exported="false" />
+        <activity
+            android:name=".activity_grades_p"
+            android:exported="false" />
+        <activity
+            android:name=".activity_qr_scanner"
+            android:exported="false" />
+        <activity
+            android:name=".activity_qr_generator"
+            android:exported="false" />
+        <activity
+            android:name=".activity_student"
+            android:exported="false" />
+        <activity
+            android:name=".activity_teacher"
+            android:exported="false" />
+        <activity
+            android:name=".activity_create_subject"
+            android:exported="false" />
+        <activity
+            android:name=".activity_change_role"
+            android:exported="false" />
+        <activity
+            android:name=".activity_admin"
+            android:exported="false" />
+        <activity
+            android:name=".activity_register"
+            android:exported="false" />
+        <activity
+            android:name=".activity_login"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".CreateSubjectActivity" />
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".GradesActivity" />
+        <activity android:name=".StudentGradesActivity" />
+        <activity android:name=".QRGeneratorActivity" />
+        <activity android:name=".QRScannerActivity" />
+    </application>
+
+</manifest>
