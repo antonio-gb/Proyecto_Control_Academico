@@ -18,7 +18,7 @@ class QRGeneratorActivity : AppCompatActivity() { // Declara la actividad que ge
 
         try { // Bloque try para manejar posibles excepciones al generar el QR
             val encoder = BarcodeEncoder() // Crea una instancia del codificador de códigos de barras
-            val bitmap: Bitmap = encoder.encodeBitmap("Asistencia: $uid", BarcodeFormat.QR_CODE, 600, 600) // Genera el QR con el UID del alumno, formato QR_CODE y tamaño 600x600 píxeles
+            val bitmap: Bitmap = encoder.encodeBitmap("Asistencia:$uid", BarcodeFormat.QR_CODE, 600, 600) // Genera el QR con el UID del alumno, formato QR_CODE y tamaño 600x600 píxeles
             ivQR.setImageBitmap(bitmap) // Muestra el QR generado en el ImageView
         } catch (e: Exception) { // Captura cualquier excepción que pueda ocurrir durante la generación
             e.printStackTrace() // Imprime el rastro de la excepción en el log para depuración
